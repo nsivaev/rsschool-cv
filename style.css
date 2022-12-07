@@ -1,0 +1,43 @@
+/*start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --text: #fff;
+}
+
+@font-face {
+    font-family: Nagel;
+    src: url(/fonts/Nagel_Medium.otf);
+}
+
+@font-face {
+    font-family: Nagel_f;
+    src: url(/fonts/Nagel_Medium.otf);
+    font-weight: 900;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: Nagel, sans-serif;
+    line-height: 1.55;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,li,ol {
+    color: white;
+    text-decoration: none;
+}
+
+
