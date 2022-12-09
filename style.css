@@ -1,43 +1,98 @@
-/*start*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --index: calc(1vw + 1vh);
-    --text: #fff;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: Nagel;
-    src: url(/fonts/Nagel_Medium.otf);
-}
-
-@font-face {
-    font-family: Nagel_f;
-    src: url(/fonts/Nagel_Medium.otf);
-    font-weight: 900;
+  font-family: "PT Mono";
+  src: url(fonts/pt-mono_regular);
 }
 
 body {
-    background-color: #1e1e1e;
-    font-family: Nagel, sans-serif;
-    line-height: 1.55;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
+  margin-top: 64px;
+  margin-bottom: 0px;
+  font-family: "PT Mono";
+  letter-spacing: 0.35em;
+  color: white;
+  background-color: #1e1e1e;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,ul,li,ol {
-    color: white;
-    text-decoration: none;
+.l-wrap {
+  max-width: inherit;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+.l-guest-article:after {
+  display: table;
+  clear: both;
+  content: "";
+}
 
+@media (min-width: 320px) {
+  .l-guest-article .grid-item {
+    padding-left: 12px;
+    padding-right: 12px;
+    float: left;
+  }
+}
+
+.l-guest-article .l-main {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) {
+  .l-guest-article .l-main {
+    width: 50%;
+    margin-top: 0;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .l-guest-article .l-main {
+    width: 50%;
+  }
+}
+@media (min-width: 320px) {
+  .l-guest-article .l-sidebar {
+    width: 50%;
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .l-guest-article .l-sidebar {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+/* Demo purposes */
+.grid-inner {
+  display: block;
+  height: 80px;
+  background: rgba(255, 0, 0, 0.25);
+  height: 100vh;
+}
+
+/*.column {*/
+/*  width: calc((100% - 288px) / 12);*/
+/*  margin-right: 12px;*/
+/*  margin-left: 12px;*/
+/*  background: rgba(0, 0, 255, 0.25);*/
+/*  float: left;*/
+/*  height: 80px;*/
+/*}*/
+
+.grid-inner nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a  {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/*todo плавное подчеркивание*/
