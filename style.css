@@ -45,18 +45,25 @@ address {
 }
 
 /*==========*/
+@font-face {
+    src: url("fonts/pt-mono_regular.woff2");
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: 400;
+}
+
 * {
     color: white;
     background-color: #1e1e1e;
     text-transform: uppercase;
-    font-family: "PT Mono";
     letter-spacing: 0.35em;
     font-size: 12px;
     font-weight: 400;
 }
 
 body {
-    margin: 20px;
+    margin: 80px;
+    font-family: "PT Mono", sans-serif;
 }
 
 nav {
